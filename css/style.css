@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+
+
+/* -------------
+base
+---------------*/
+html {
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-all;
+}
+  /* medium500 */
+  /* bold700 */
+body {
+  font-family: "Noto Sans JP", serif;
+  font-weight: 500;
+  color: #505050;
+  font-size: 1.125rem;
+  line-height: calc(33 / 18);
+  letter-spacing: 0;
+}
+
+:root {
+  --color-main:#505050;
+}
+
+/* -------------
+common
+---------------*/
+/* PC.SPの非表示 */
+@media (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+.inner {
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  cursor: pointer !important;
+}
+
+
+/* -------------
+header
+---------------*/
+
+.header {
+  padding-inline: 20px;
+}
+
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 9.51px;
+}
+
+.header__logo img {
+  width: 25.49px;
+  height: 25px;
+  /* aspect-ratio: 25.49px / 25px; */
+}
+
+.header__logo a {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  transition: opacity 0.4s; 
+}
+@media (max-width: 767px) {
+  .header__logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.header__logo a:hover {
+  opacity: 0.7;
+}
+
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__nav ul li a {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  transition: opacity 0.4s;
+}
+@media (max-width: 767px) {
+  .header__nav ul li a {
+    display: none;
+  }
+}
+
+.header__nav ul li a:hover {
+  opacity: 0.7;
+}
+
+
