@@ -56,6 +56,36 @@ a {
   cursor: pointer !important;
 }
 
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  display: inline-block;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  /* line-height: calc(39 / 30); */
+  /* color: var(--color-main); */
+  /* font-family: var(--font-eb); */
+  position: relative;
+}
+.section-title h2::before,
+.section-title h2::after {
+  content: '';
+  width: 25.49px;
+  height: 25px;
+  /* background: var(--color-main); */
+  position: absolute;
+  background: url("../img/strengths_logo.svg");
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section-title h2::before {
+  left: -45px;
+}
+.section-title h2::after {
+  right: -45px;
+}
+
 
 /* -------------
 header
@@ -290,3 +320,99 @@ message
     display: block;
   }
 }
+
+/* -------------
+strengths
+---------------*/
+#strengths {
+  padding: 60px 100px 68px;
+  background: rgb(13 150 160 / 0.102);
+}
+@media (max-width: 767px){
+#strengths {
+    padding: 47px 20px 35px;   
+  }
+}
+
+.strengths__contents {
+  padding-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 767px){
+.strengths__contents {
+    padding-top: 36px;
+    gap: 42px;  
+  }
+}
+
+.strengths__content {
+  display: flex;
+  align-items: center;
+  column-gap: calc(45 /880 * 100%);
+}
+@media (max-width:767px){
+  .strengths__content{
+    flex-direction: column;
+    row-gap:26px;
+  }
+}
+
+.strengths__content:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+@media (max-width:767px){
+  .strengths__content:nth-child(odd) {
+    flex-direction: column;
+  }
+}    
+
+.strengths__textarea {
+  flex: 1;
+}
+
+.strengths__textarea h3 {
+  font-size: 1.375rem;
+  line-height: calc(35 / 22);
+  font-weight: 700;
+}
+@media (max-width: 767px){
+.strengths__textarea h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: calc(30 / 20);
+  }
+}
+
+.strengths__textarea p {
+  margin-top: 17px;
+  font-size: 18px;
+  line-height: calc(33 / 18);
+}
+@media (max-width: 767px){
+.strengths__textarea p {
+    margin-top: 8px;
+    font-size: 1rem;
+    line-height: calc(30 / 16);
+  }
+}
+
+.strengths__image {
+  width: calc(440 /880 * 100%);
+}
+@media (max-width: 767px){
+.strengths__image {
+    width: 100%;
+  }
+}
+.strengths__image img {
+  aspect-ratio: 440 /247;
+  object-fit: cover;
+}
+@media (max-width: 767px){
+.strengths__image img {
+    aspect-ratio: 335 / 200;
+  }
+}
+
