@@ -63,9 +63,6 @@ a {
   display: inline-block;
   font-size: 1.5625rem;
   font-weight: 700;
-  /* line-height: calc(39 / 30); */
-  /* color: var(--color-main); */
-  /* font-family: var(--font-eb); */
   position: relative;
 }
 .section-title h2::before,
@@ -73,7 +70,6 @@ a {
   content: '';
   width: 25.49px;
   height: 25px;
-  /* background: var(--color-main); */
   position: absolute;
   background: url("../img/strengths_logo.svg");
   top: 50%;
@@ -415,4 +411,89 @@ strengths
     aspect-ratio: 335 / 200;
   }
 }
+
+/* -------------
+service
+---------------*/
+#service {
+  padding: 60px 30px 59px;
+}
+@media (max-width: 767px){
+#service {
+    padding: 41px 20px;
+  }
+}
+
+.service__contents {
+  margin-top: 41px;
+}
+@media (max-width: 767px){
+.service__contents {
+  margin-top: 39px;
+}
+}
+
+.service__items {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px){
+.service__items {
+  flex-direction: column;
+  row-gap: 40px;
+}
+}
+
+.service__item {
+  width: calc(260 / 880 *100%);
+}
+@media (max-width: 767px){
+.service__item {
+  width: 100%;
+}
+}
+.service-item__image img {
+  aspect-ratio: 260 / 200;
+  object-fit: cover;
+}
+@media (max-width: 767px){
+  .service-item__image img {
+    aspect-ratio: 335 / 200;
+    object-fit: cover;
+  }
+}
+
+.service-item__textarea {
+  margin-top: 20px;
+  /* text-align: center; */
+}
+@media (max-width: 767px){
+  .service-item__textarea {
+    margin-top: 32px;
+  }
+}
+
+.service-item__textarea h3 {
+  font-size: 1.25rem;
+  line-height: calc(25 / 20);
+  font-weight: 700;
+  text-align: center;
+}
+
+.service-item__textarea p {
+  margin-top: 8px;
+  font-size: 1.0625rem;
+  line-height: calc(30 / 17);
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 767px){
+  .service-item__textarea p {
+    text-align: left;
+    margin-top: 9px;
+  }
+}
+
+
+
 
