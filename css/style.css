@@ -575,4 +575,142 @@ news
 }
 
 
+/* -------------
+access
+/* ---------------*/
+#access {
+  padding: 60px 20px 70px;
+}
+@media (max-width:767px) {
+  #access {
+    padding: 38px 20px 50px;
+  }
+}
+
+.access__map {
+  width: 440px;
+  aspect-ratio: 440 / 330;
+}
+@media (max-width:767px) {
+  .access__map {
+    width: 335px;
+    aspect-ratio: 335 / 222;
+  }
+}
+
+
+.access__map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.access__contents {
+  margin-top: 40px;
+  display: flex;
+  column-gap: calc(46 /880 * 100%);
+  align-items: start;
+}
+@media (max-width:767px) {
+  .access__contents {
+    display: block;
+  }
+}
+
+.access__textarea {
+  flex: 1;
+}
+
+.access__textarea h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: calc( 33 / 22);
+}
+@media (max-width:767px) {
+  .access__textarea h3 {
+    margin-top: 22px;
+  }
+}
+
+.access__address {
+  margin-top: 14px;
+  font-size: 1.125rem;
+  line-height: calc(27 / 18);
+}
+@media (max-width:767px) {
+  .access__address  {
+    margin-top: 12px;
+    font-size: 1rem;
+    line-height: calc(24 / 16);
+  }
+}
+
+.access__tell {
+  display: block;
+  margin-top: 15px;
+  font-size: 1.125rem;
+  line-height: calc(27 / 18);
+}
+@media (max-width:767px) {
+  .access__tell  {
+    margin-top: 5px;
+    font-size: 1rem;
+    line-height: calc(27 / 16);
+  }
+}
+
+.tell-nuv {
+  /* margin-left: 2px; */
+  font-weight: 700;
+  font-size: 1.5625rem;
+  color: #0D96A0;
+  line-height: calc(40 / 25);
+}
+@media (max-width: 767px) {
+  .tell-nuv {
+    margin-left: 2px;
+  }
+}
+
+.access__email {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 1.125rem;
+  line-height: calc(27 / 18);
+}
+@media (max-width: 767px) {
+  .access__email {
+  margin-top: 8px;
+  font-size: 1rem;
+  line-height: calc(24 / 16);
+}
+}
+
+.access__time {
+  margin-top: 23px;
+  margin-left: 3px;
+  padding-block: 15px 12px;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  font-size: 1.125rem;
+  line-height: calc(40 / 18);
+}
+@media (max-width: 767px) {
+  .access__time {
+  margin-top: 12px;
+  margin-left: 0;
+  padding-block: 13px 10px;
+  font-size: 1rem;
+  line-height: calc(30 / 16);
+}
+}
+
+
+
+
+
+
+
+
+
 
