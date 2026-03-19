@@ -6,40 +6,54 @@
   <title>滑石きたむら動物病院</title>
   <meta name="description" content="地域に密着した大切な家族のホームドクターのような動物病院です。">
   <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="./img/logo_1.svg">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <div id="container">
-    <header class="header">
-      <div class="inner">
-        <h1 class="header__logo">
-          <a><img src="./img/logo_1.svg" alt="滑石きたむら動物病院のロゴ画像"></a>
-          <a href="#">滑石きたむら動物病院</a>
-        </h1>
-        <nav class="header__nav pc">
-          <ul>
-            <li>
-              <a href="#message">ご挨拶</a>
-            </li>
-            <li>
-              <a href="#strengths">強み</a>
-            </li>
-            <li>
-              <a href="#service">サービス</a>
-            </li>
-            <li>
-              <a href="#news">お知らせ</a>
-            </li>
-            <li>
-              <a href="#access">アクセス</a>
-            </li>
-            <li>
-              <a href="#contact">お問い合わせ</a>
-            </li>
-          </ul>
-        </nav>
+    <header>
+      <div class="header__inner">
+        <div class="header__logo">
+          <h1>
+            <a href="#">
+              <div class="header__logo-img">
+                <img src="./img/logo_1.svg" alt="滑石きたむら動物病院のロゴ画像">
+              </div>
+              <div class="header__logo-text">
+                <span>滑石きたむら動物病院</span>
+              </div>
+            </a>
+          </h1>
+        </div>
+        <div class="header__nav pc">
+          <nav>         
+            <ul>
+              <li>
+                <a href="#message">ご挨拶</a>
+              </li>
+              <li>
+                <a href="#strengths">強み</a>
+              </li>
+              <li>
+                <a href="#service">サービス</a>
+              </li>
+              <li>
+                <a href="#news">お知らせ</a>
+              </li>
+              <li>
+                <a href="#access">アクセス</a>
+              </li>
+              <li>
+                <a href="#contact">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 <!-- main -->
@@ -54,9 +68,8 @@
         <div class="fv__contents">
           <div class="fv__catch">
             <h2>
-              <span class="small-font">滑石きたむら動物病院は</span>
-              <span class="large-font">大切な家族の<br>
-                ホームドクターです</span>
+              滑石きたむら動物病院は<br>
+              <span class="large-font">大切な家族の<br>ホームドクターです</span>
             </h2>
           </div>
         </div>
@@ -69,8 +82,8 @@
             動物たちの健康で<br class="sp-only">幸せな生活をサポート
           </h2>
           <div class="message__text">
-            当院は地域に密着し、皆さまの大切な家族の一員である動物たちのホームドクターを目指しています。<br>
-              緊急時だけではなく、日常のちょっとした不安や違和感などお気軽にご相談ください。<br>
+            当院は地域に密着し、皆さまの大切な家族の一員である動物たちの<br class="ib-span">ホームドクターを目指しています。<br>
+              緊急時だけではなく、日常のちょっとした不安や違和感など<br class="ib-span">お気軽にご相談ください。<br>
               動物たちが健康で幸せな生活を送ることができるようサポートいたします。
           </div>
           <div class="message__img">
@@ -193,7 +206,7 @@
               <article>
                 <a href="" class="news__item">
                   <div class="news__item-date">
-                    <time>0000.00.00</time>
+                    <time datetime="0000-00-00">0000.00.00</time>
                   </div>
                   <div class="news__item-title">
                     <h3>去勢手術の助成金</h3>
@@ -206,7 +219,7 @@
               <article>
                 <a href="" class="news__item">
                   <div class="news__item-date">
-                    <time>0000.00.00</time>
+                    <time datetime="0000-00-00">0000.00.00</time>
                   </div>
                   <div class="news__item-title">
                     <h3>往診の範囲が拡大</h3>
@@ -219,7 +232,7 @@
               <article>
                 <a href="" class="news__item">
                   <div class="news__item-date">
-                    <time>0000.00.00</time>
+                    <time datetime="0000-00-00">0000.00.00</time>
                   </div>
                   <div class="news__item-title">
                     <h3>新年のご挨拶</h3>
@@ -232,7 +245,7 @@
               <article>
                 <a href="" class="news__item">
                   <div class="news__item-date">
-                    <time>0000.00.00</time>
+                    <time datetime="0000-00-00">0000.00.00</time>
                   </div>
                   <div class="news__item-title">
                     <h3>年末年始の診療</h3>
@@ -245,7 +258,7 @@
               <article>
                 <a href="" class="news__item">
                   <div class="news__item-date">
-                    <time>0000.00.00</time>
+                    <time datetime="0000-00-00">0000.00.00</time>
                   </div>
                   <div class="news__item-title">
                     <h3>開院11周年</h3>
@@ -270,135 +283,130 @@
             <div class="access__map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13412.719029688213!2d129.82065105927236!3d32.81400177836784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44CSODUyLTgwNjXjgIDplbfltI7nnIzplbfltI7luILmqKrlsL7il4vkuIHnm67il4st4peL!5e0!3m2!1sja!2sjp!4v1772484838819!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="access__textarea">
+            <address class="access__textarea">
               <h3>滑石きたむら動物病院</h3>
               <div class="access__address">
                 <p>〒852-8065　<span class="ib-span">長崎県長崎市横尾○丁目○-○</span></p>
               </div>
-              <a class="access__tell" href="tel:000-0000-0000">
-                電話：<span class="tell-num">000-0000-0000</span>
-              </a>
-              <a class="access__email" href="mailto:info@example.com">
-                  メール：info@example.com
-              </a>
+              <div class="access__tell">
+                <p>電話：<span class="pc">000-0000-0000</span>
+                <a href="tel:000-0000-0000" class="sp">000-0000-0000</a></p>
+              </div>
+              <div class="access__email">
+                <span>メール：</span><a href="mailto:info@example.com">info@example.com</a>
+              </div>
               <div class="access__time">
                 <p>診療時間：24時間365日</p>
                 <p>休診日：なし</p>
               </div>
-            </div>
+            </address>
           </div>
         </div>
       </section>
 
 <!-- contact -->
-      <section id="contact" class="contact">
+      <section id="contact">
         <div class="inner">
-          <div class="news__title section-title">
+          <div class="contact__title section-title">
             <h2>お問い合わせ</h2>
           </div>
           <div class="contact__txt">
-            ご予約やご質問などお気軽にお問い合わせください。<br>お問い合わせいただいてから3日以内の変身となります。
+            ご予約やご質問などお気軽にお問い合わせください。<br>お問い合わせいただいてから3日以内の返信となります。
           </div>
+
           <div class="contact__form form">
             <form>
               <div class="form__items">
                 <dl class="form__item">
                   <dt class="form__label">
-                    <label for="name">お名前</label>
+                    <label for="your-name">お名前</label>
                   </dt>
                   <dd class="form__input">
-                    <input type="text" name="name" id="name">            
+                    <input type="text" name="your-name" id="yor-name" class="form-control">            
                   </dd>           
                 </dl>
                 <dl class="form__item">
                   <dt class="form__label">
-                    <label for="email">メールアドレス</label>
+                    <label for="your-email">メールアドレス</label>
                   </dt>
                   <dd class="form__input">
-                    <input type="email" name="email" id="email">        
-                  </dd>   
+                    <input type="text" name="your-email" id="your-email" class="form-control">            
+                  </dd>           
                 </dl>
                 <dl class="form__item">
                   <dt class="form__label">
-                    <label for="content">内　容</label>
+                    <label for="your-content">内　容</label>
                   </dt>
                   <dd class="form__textarea">
-                    <textarea name="content" id="content"></textarea>      
+                    <textarea name="your-content" id="your-content" class="form-control form-textarea"></textarea>      
                   </dd>             
                 </dl>
               </div>
               <div class="contact__button">
-                <input type="submit" value="送 信">
+                <input type="submit"  class="form-submit" value="送 信">
               </div>
             </form>
           </div>
         </div>
       </section>
       
-<!-- footer -->
-      <footer class="footer">
-        <div class="footer__content">
-          <nav class="footer__nav">
-            <ul>
-              <li>
-                <a href="">トップ</a>
-              </li>
-              <li>
-                <a href="#message">ご挨拶</a>
-              </li>
-              <li>
-                <a href="#strengths">強み</a>
-              </li>
-              <li>
-                <a href="#service">サービス</a>
-              </li>
-              <li>
-                <a href="#news">お知らせ</a>
-              </li>
-              <li>
-                <a href="#access">アクセス</a>
-              </li>
-              <li>
-                <a href="#contact" class="footer-nav__link">お問い合わせ</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__copyright">
-            <p>&copy;Copyright0000<span class="ib">　滑石きたむら動物病院</span></p>
-          </div>
-            <ul class="footer__sns sns">
-              <li>
-                <a href="" >
-                  <div class="x">
-                    <img src="./img/twitter.svg" alt="x">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="" >
-                  <div class="facebook">
-                    <img src="./img/facebook.svg" alt="facebook">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="" >
-                  <div class="youtube">
-                    <img src="./img/youtube.svg" alt="youtube">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="" >
-                  <div class="instagram">
-                    <img src="./img/instagram.svg" alt="instagram">
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-      </footer>
     </main>
+
+  <!-- footer -->
+    <footer class="footer">
+      <div class="footer__content">
+        <nav class="footer__nav">
+          <ul>
+            <li>
+              <a href="">トップ</a>
+            </li>
+            <li>
+              <a href="#message">ご挨拶</a>
+            </li>
+            <li>
+              <a href="#strengths">強み</a>
+            </li>
+            <li>
+              <a href="#service">サービス</a>
+            </li>
+            <li>
+              <a href="#news">お知らせ</a>
+            </li>
+            <li>
+              <a href="#access">アクセス</a>
+            </li>
+            <li>
+              <a href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__copyright">
+          <p>&copy;Copyright0000<span class="ib">　滑石きたむら動物病院</span></p>
+        </div>
+          <ul class="footer__sns sns">
+            <li>
+              <a href="" class="x">
+                <img src="./img/twitter.svg" alt="x">
+              </a>
+            </li>
+            <li>
+              <a href="" class="facebook">
+                <img src="./img/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a href="" class="youtube">
+                <img src="./img/youtube.svg" alt="youtube">
+              </a>
+            </li>
+            <li>
+              <a href="" class="instagram">
+                <img src="./img/instagram.svg" alt="instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+    </footer>
   </div>
 </body>
 </html>
