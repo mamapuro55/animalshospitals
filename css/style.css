@@ -2,6 +2,12 @@
 /* -------------
 base
 ---------------*/
+
+:root {
+  --color-main:#505050;
+  --font-sans:"Noto Sans JP", sans serif;
+}
+
 html {
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
@@ -29,11 +35,6 @@ body {
 #container {
   width: 100%;
   overflow: hidden;
-}
-
-:root {
-  --color-main:#505050;
-  --font-sans:"Noto Sans JP", sans serif;
 }
 
 .ib {
