@@ -117,7 +117,7 @@ header
 
 header {
   width: 100%;
-  height: 50px;
+  /* height: 50px; */
   padding-inline: 20px;
   position: fixed;
   top: 0;
@@ -193,6 +193,10 @@ header {
   }
 }
 
+main {
+  margin-top: 50px;
+}
+
 /* -------------
 FV
 ---------------*/
@@ -213,68 +217,53 @@ FV
 }
 @media (max-width: 767px) {
   .fv__contents {
-  align-items: flex-end;
-}
+    align-items: flex-end;
+  }
 }
 
 .fv__catch {
-  width: 492px;
-  height: 210px;
-  padding-bottom: 4px;
-  padding-left: 61px;
+  width: calc(492 / 1080 * 100vw);
+  height: auto;
+  padding-top: calc(19 / 1080 * 100vw);
+  padding-bottom: calc(26 / 1080 * 100vw);
+  padding-left: calc(61 / 1080 * 100vw);
   background: rgb(255 255 255 / 0.702);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 900px){
-  .fv__catch {
-    width: 400px;
-    height: 179px;
-  }
-}
 @media (max-width: 767px) {
   .fv__catch {
     width: 311px;
-    height: 148px;
-    padding-bottom: 8px;
+    padding-top: 11px;
+    padding-bottom: 6px;
     padding-left: 20px;
-    align-items: flex-end;
-    justify-content: initial;
+    align-items: center;
+    justify-content: flex-start;
+
   }
 }
 
 .fv__catch h2 {
-  font-size: 2.5rem;
+  font-size: calc(25 / 1080 * 100vw);
   font-weight: 700;
 }
-@media (max-width: 900px){
-  .fv__catch h2 {
-    font-size: 2.2rem;
-  }
-}
 @media (max-width: 767px) {
-  .fv__catch h2 {
+    .fv__catch h2 {
     font-size: 2rem;
   }
 }
 
 .large-font {
-  font-size: 40px;
+  font-size: calc(40 / 1080 * 100vw);
   font-weight: 700;
   line-height: calc(60 / 40);
   color: #0D96A0;
 }
-@media (max-width: 950px) {
-  .large-font {
-    font-size: 3.3rem;
-    line-height: calc(48 / 33);
-  }
-}
 @media (max-width: 767px) {
   .large-font {
     font-size: 3rem;
-    line-height: calc(36 / 30);
+    line-height: calc(40 / 30);
   }
 }
 
@@ -518,7 +507,6 @@ service
   margin-top: 8px;
   font-size: 1.7rem;
   line-height: calc(30 / 17);
-  font-weight: 700;
 }
 @media (max-width: 767px){
   .service-item__textarea p {
@@ -726,14 +714,14 @@ access
   font-size: 2.5rem;
   color: #0D96A0;
   line-height: calc(40 / 25);
-  transition: opacity 0.4s;
+  /* transition: opacity 0.4s; */
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .access__tell span:hover {
     opacity: 0.7;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .access__tell .sp {
@@ -929,6 +917,7 @@ contact
   font-weight: 700;
   display: flex;
   justify-content: center;
+  text-align: center;
   text-align: center;
   cursor: pointer;
   border: 1px solid #0D96A0;
