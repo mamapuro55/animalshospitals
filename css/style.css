@@ -140,8 +140,8 @@ header {
 }
 
 .header__logo-img {
-  width: 25.49px;
   height: 25px;
+  width: auto;
 }
 
 .header__logo a {
@@ -918,7 +918,7 @@ contact
   display: flex;
   justify-content: center;
   text-align: center;
-  text-align: center;
+  align-items: center;
   cursor: pointer;
   border: 1px solid #0D96A0;
   transition: background-color 0.4s, color 0.4s; 
