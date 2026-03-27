@@ -139,12 +139,6 @@ header {
   align-items: center;
 }
 
-.header__logo-img {
-  height: 100%;
-  width: auto;
-  max-height: 25px;
-}
-
 .header__logo a {
   height: 50px;
   display: flex;
@@ -167,6 +161,11 @@ header {
     opacity: 0.7;
   }
 }
+
+.header__logo a span:first-child {
+  width: 25.49px;
+}
+
 
 .header__nav ul {
   display: flex;
@@ -228,24 +227,20 @@ FV
 
 .fv__catch {
   width: calc(492 / 1080 * 100vw);
-  height: auto;
-  padding-top: calc(19 / 1080 * 100vw);
-  padding-bottom: calc(26 / 1080 * 100vw);
-  padding-left: calc(61 / 1080 * 100vw);
+  height: calc(210 / 1080 * 100vw);
+  padding-left: calc(99 / 1080 * 100vw);
   background: rgb(255 255 255 / 0.702);
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media (max-width: 767px) {
   .fv__catch {
-    width: 311px;
-    padding-top: 11px;
-    padding-bottom: 6px;
-    padding-left: 20px;
-    align-items: center;
+    width: calc(311 / 375 * 100vw);
+    height: calc(148 / 375 * 100vw);
+    padding-top: calc(9 / 375 * 100vw);
+    padding-bottom: calc(4 / 375 * 100vw);
+    padding-left: calc(20 / 375 * 100vw);
     justify-content: flex-start;
-
   }
 }
 
@@ -255,7 +250,7 @@ FV
 }
 @media (max-width: 767px) {
     .fv__catch h2 {
-    font-size: 2rem;
+    font-size: calc(20 / 375 * 100vw);
   }
 }
 
@@ -267,8 +262,8 @@ FV
 }
 @media (max-width: 767px) {
   .large-font {
-    font-size: 3rem;
-    line-height: calc(40 / 30);
+    font-size: calc(30 / 375 * 100vw);
+    line-height: calc(35 / 30);
   }
 }
 
@@ -789,7 +784,6 @@ access
     font-size: 1.6rem;
     line-height: calc(30 / 16);
   }
-
 }
 
 /* -------------
@@ -906,6 +900,7 @@ contact
 .form-submit {
   margin-top: 50px;
   margin-inline: auto;
+  padding-bottom: 2px;
   width: 200px;
   height: 50px;
   background: #0D96A0;
